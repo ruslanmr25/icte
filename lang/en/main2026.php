@@ -17,7 +17,7 @@ return [
 
     "header_section" =>
     [
-        "subname" => "International Conference on Teacher Education (ICTE-2025) ",
+        "subname" => "International Conference on Teacher Education (ICTE-2026) ",
         "name" => "MODERN TEACHER EDUCATION IN INTERNATIONAL, NATIONAL AND REGIONAL DIMENSIONS",
         "city" => "Samarkand",
 
@@ -28,22 +28,22 @@ return [
         "suggestion" => "
 Samarkand State University named after Sharof Rashidov,
 in cooperation with the Samarkand State Institute of Foreign Languages and Shakhrisabz State Pedagogical Institute,
- invites you to the international conference on teacher education 'ICTE-2025: UZBEKISTAN',
-  which will be held on June 3-5, 2025.",
+ invites you to the international conference on pedagogical education 'ICTE-2026: UZBEKISTAN',
+  which will be held on June 3-5, 2026.",
 
         "sections" => " The main sections of the conference :
                             <br />
                             - Practice-oriented training of pedagogical students: models of
                             university-school cooperation
                             <br />
-                            - Teacher education in a multicultural world: history and
+                            - Pedagogical education in a multicultural world: history and
                             present
                             <br />
                             - Teacher-educator: tasks and challenges",
 
         "samsu" => "Samarkand State University named after Sharof Rashidov",
 
-        "date1" => "June 3, 2025",
+        "date1" => "June 3, 2026",
         "section1" => " 1. Modern forms of university-school cooperation models <br />
                             2. Digital technologies in practice-oriented education <br />
                             3. Mentorship system for supporting young educators <br />
@@ -52,16 +52,16 @@ in cooperation with the Samarkand State Institute of Foreign Languages and Shakh
 
         "inyaz" => "Samarkand State Institute of Foreign Languages",
 
-        "date2" => "June 4, 2025",
+        "date2" => "June 4, 2026",
         "section2" => " 5. Multicultural education: challenges and perspectives <br />
-                            6. Historical traditions of teacher education in different
+                            6. Historical traditions of pedagogical education in different
                             countries <br />
                             7. Developing tolerance and intercultural dialogue in future
                             educators <br />
                             8. Using digital technologies in multicultural education <br />",
 
         "ShahrisabzSPI" => "Shakhrisabz State Pedagogical Institute",
-        "date3" => "June 5, 2025",
+        "date3" => "June 5, 2026",
         "section3" => " 9. The educational role of the teacher in modern society <br />
                             10. Psychological and pedagogical support and professional
                             burnout of teachers <br />
@@ -76,7 +76,7 @@ in cooperation with the Samarkand State Institute of Foreign Languages and Shakh
         "name" => "Main Objectives of the Conference",
         "goals" => "<p>
                                 ✔ Discussion of current and promising international scientific
-                                projects in the field of teacher education, coordination
+                                projects in the field of pedagogical education, coordination
                                 of participants' activities within workshops, and defining
                                 implementation plans.
                             </p>

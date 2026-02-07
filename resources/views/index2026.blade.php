@@ -61,29 +61,29 @@
             <div class="flex justify-between items-center">
                 <div class="flex-shrink-0 flex items-center gap-2" data-aos="fade-down" data-aos-duration="800">
                     <a href="#" class="flex items-center gap-2">
-                        <img src="/logo.png" alt="ICTE Logo" class="h-10 w-auto"
+                        <img src="/logo2026.png" alt="ICTE Logo" class="h-10 w-auto"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <span class="text-2xl font-black tracking-tighter text-white hidden"
-                            :class="scrolled ? 'text-blue-900' : 'text-white'">ICTE 2025</span>
+                            :class="scrolled ? 'text-blue-900' : 'text-white'">ICTE 2026</span>
                     </a>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8" data-aos="fade-down" data-aos-duration="800"
                     data-aos-delay="100">
                     <a href="#home" class="text-[15px] font-medium hover:text-blue-400 transition"
-                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main.main_page') }}</a>
+                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main2026.main_page') }}</a>
                     <a href="#about" class="text-[15px] font-medium hover:text-blue-400 transition"
-                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main.about_conference') }}</a>
+                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main2026.about_conference') }}</a>
                     <a href="#goals" class="text-[15px] font-medium hover:text-blue-400 transition"
-                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main.goals') }}</a>
+                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main2026.goals') }}</a>
                     <a href="#maps" class="text-[15px] font-medium hover:text-blue-400 transition"
-                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main.location') }}</a>
+                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">{{ __('main2026.location') }}</a>
 
                     <div class="relative" x-data="{ open: false }">
                         <button @click="open = !open" @click.away="open = false"
                             class="flex items-center space-x-1 text-[15px] font-medium transition hover:text-blue-400"
                             :class="scrolled ? 'text-slate-700' : 'text-white/90'">
-                            <span>{{ __('main.language') }}</span>
+                            <span>{{ __('main2026.language') }}</span>
                             <svg class="w-4 h-4 transition-transform" :class="{ 'rotate-180': open }" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -110,10 +110,14 @@
                         </div>
                     </div>
 
-                    <a href="/files/program.docx" download
+                    <a href="/conferences/2025" class="text-[15px] font-medium hover:text-blue-400 transition"
+                        :class="scrolled ? 'text-slate-700' : 'text-white/90'">ICTE - 2025</a>
+
+
+                    {{-- <a href="/files/program.docx" download
                         class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5">
-                        {{ __('main.program') }}
-                    </a>
+                        {{ __('main2026.program') }}
+                    </a> --}}
                 </div>
 
                 <div class="md:hidden flex items-center">
@@ -134,16 +138,16 @@
             style="display: none;">
             <div class="px-4 py-6 space-y-4">
                 <a href="#home" @click="mobileMenu = false"
-                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main.main_page') }}</a>
+                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main2026.main_page') }}</a>
                 <a href="#about" @click="mobileMenu = false"
-                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main.about_conference') }}</a>
+                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main2026.about_conference') }}</a>
                 <a href="#goals" @click="mobileMenu = false"
-                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main.goals') }}</a>
+                    class="block text-lg font-medium text-gray-800 hover:text-blue-600">{{ __('main2026.goals') }}</a>
                 <a href="/files/program.docx" download class="block text-lg font-medium text-blue-600">
-                    {{ __('main.program') }}
+                    {{ __('main2026.program') }}
                 </a>
                 <div class="border-t border-gray-100 pt-4">
-                    <p class="text-sm text-gray-400 mb-3 uppercase font-semibold">{{ __('main.language') }}</p>
+                    <p class="text-sm text-gray-400 mb-3 uppercase font-semibold">{{ __('main2026.language') }}</p>
                     <div class="flex space-x-6">
                         <a href="{{ route('lang.switch', 'uz') }}"
                             class="text-base font-bold text-slate-700 hover:text-blue-600">UZ 🇺🇿</a>
@@ -187,13 +191,12 @@
         <div class="relative z-30 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mt-16">
             <h2 data-aos="fade-down" data-aos-delay="200"
                 class="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 font-semibold tracking-wider uppercase text-sm sm:text-[15px]">
-                {{ __('main.header_section.subname') }}
+                {{ __('main2026.header_section.subname') }}
             </h2>
 
-
-             <h1 data-aos="fade-up" data-aos-delay="400"
+            <h1 data-aos="fade-up" data-aos-delay="400"
                 class="text-3xl sm:text-4xl md:text-5xl llg:text-[3rem] font-extrabold text-white tracking-tight leading-[1.1] mb-8 drop-shadow-sm">
-                {{ __('main.header_section.name') }}
+                {{ __('main2026.header_section.name') }}
             </h1>
 
             <div data-aos="fade-up" data-aos-delay="600"
@@ -207,20 +210,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    {{ __('main.header_section.city') }}
+                    {{ __('main2026.header_section.city') }}
                 </div>
                 <a href="#about"
                     class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-full font-bold shadow-lg shadow-blue-600/40 transition-all transform hover:-translate-y-1 hover:shadow-xl">
                     Batafsil ma'lumot
                 </a>
-                <a href="/files/COLLECTION2025.pdf" download
-                    class="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 bg-white text-blue-900 hover:bg-blue-50 rounded-full font-bold shadow-md transition-all transform hover:-translate-y-1">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                    </svg>
-                    {{ __('main.archive') }}
-                </a>
+
             </div>
         </div>
 
@@ -232,6 +228,83 @@
             </svg>
         </a>
     </section>
+    <div class="border-b border-gray-100 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6" x-data="countdown()"
+                x-init="startTimer()">
+
+                <div class="text-center md:text-left flex items-center gap-4">
+                    <div
+                        class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-blue-50 text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800">Konferensiya boshlanishiga qoldi:</h3>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 sm:gap-8">
+
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-slate-900 tracking-tight" x-text="days">00</span>
+                        <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Kun</span>
+                    </div>
+
+                    <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-slate-900 tracking-tight" x-text="hours">00</span>
+                        <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Soat</span>
+                    </div>
+
+                    <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-slate-900 tracking-tight"
+                            x-text="minutes">00</span>
+                        <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Daqiqa</span>
+                    </div>
+
+                    <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+
+                    <div class="text-center">
+                        <span class="block text-3xl font-bold text-blue-600 tracking-tight" x-text="seconds">00</span>
+                        <span class="text-xs text-blue-400 font-medium uppercase tracking-wider">Soniya</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function countdown() {
+            return {
+                targetDate: new Date('2026-06-03T09:00:00').getTime(),
+                days: '00',
+                hours: '00',
+                minutes: '00',
+                seconds: '00',
+                startTimer() {
+                    const update = () => {
+                        const now = new Date().getTime();
+                        const distance = this.targetDate - now;
+                        if (distance < 0) return;
+                        this.days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                        this.hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(
+                            2, '0');
+                        this.minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                        this.seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+                    };
+                    update();
+                    setInterval(update, 1000);
+                }
+            }
+        }
+    </script>
 
     <section class="py-20 relative bg-white overflow-hidden">
         <div
@@ -251,9 +324,9 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8 text-white">
                             <h3 class="text-2xl font-bold font-heading leading-tight">
-                                {{ __('main.rector_section.name') }}</h3>
+                                {{ __('main2026.rector_section.name') }}</h3>
                             <p class="text-blue-200 text-sm font-medium mt-1 uppercase tracking-wider">
-                                {{ __('main.rector_section.position') }}</p>
+                                {{ __('main2026.rector_section.position') }}</p>
                         </div>
                     </div>
 
@@ -261,21 +334,21 @@
                         <div class="bg-blue-50 p-4 rounded-2xl text-center">
                             <span class="block text-2xl font-bold text-blue-600">200+</span>
                             <span
-                                class="text-xs text-slate-500 font-medium uppercase">{{ __('main.rector_section.stats_publications') }}</span>
+                                class="text-xs text-slate-500 font-medium uppercase">{{ __('main2026.rector_section.stats_publications') }}</span>
                         </div>
                         <div class="bg-indigo-50 p-4 rounded-2xl text-center">
                             <span class="block text-2xl font-bold text-indigo-600">Top 1000</span>
                             <span
-                                class="text-xs text-slate-500 font-medium uppercase">{{ __('main.rector_section.stats_rating') }}</span>
+                                class="text-xs text-slate-500 font-medium uppercase">{{ __('main2026.rector_section.stats_rating') }}</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="w-full lg:w-7/12" data-aos="fade-left">
                     <span
-                        class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">{{ __('main.rector_section.welcome_title') }}</span>
+                        class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">{{ __('main2026.rector_section.welcome_title') }}</span>
                     <h2 class="text-3xl font-extrabold text-slate-900 mb-6 font-heading">
-                        {{ __('main.rector_section.headline') }}
+                        {{ __('main2026.rector_section.headline') }}
                     </h2>
 
                     <div
@@ -285,14 +358,14 @@
                                 d="M14.017 21L14.017 18C14.017 16.0547 15.392 14.6309 16.9043 14.1562C16.9043 12.0645 15.353 10.9668 12.8242 10.9668L12.8242 8C16.7383 8 20.25 10.2734 20.25 15.543V21L14.017 21ZM5.01758 21L5.01758 18C5.01758 16.0547 6.39258 14.6309 7.9043 14.1562C7.9043 12.0645 6.35352 10.9668 3.82422 10.9668L3.82422 8C7.73828 8 11.25 10.2734 11.25 15.543V21L5.01758 21Z" />
                         </svg>
                         <p class="mb-2">
-                            "{{ __('main.rector_section.quote') }}"
+                            "{{ __('main2026.rector_section.quote') }}"
                         </p>
-                        <p class="font-bold text-slate-900 mt-2">— {{ __('main.rector_section.wishes') }}</p>
+                        <p class="font-bold text-slate-900 mt-2">— {{ __('main2026.rector_section.wishes') }}</p>
                     </div>
 
                     <div class="prose prose-blue text-slate-600 mb-6">
-                        <p>{{ __('main.rector_section.bio') }}</p>
-                        <p>{{ __('main.rector_section.achievements') }}</p>
+                        <p>{{ __('main2026.rector_section.bio') }}</p>
+                        <p>{{ __('main2026.rector_section.achievements') }}</p>
                     </div>
 
 
@@ -314,11 +387,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
                 <span
-                    class="text-blue-600 font-bold tracking-wider uppercase text-sm pl-2 border-l-4 border-blue-500">{{ __('main.about_conference') }}</span>
+                    class="text-blue-600 font-bold tracking-wider uppercase text-sm pl-2 border-l-4 border-blue-500">{{ __('main2026.about_conference') }}</span>
                 <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-                    {{ __('main.about_section.suggestion') }}</h2>
+                    {{ __('main2026.about_section.suggestion') }}</h2>
                 <div class="mt-6 text-lg text-slate-600 leading-relaxed">
-                    {!! __('main.about_section.sections') !!}
+                    {!! __('main2026.about_section.sections') !!}
                 </div>
             </div>
 
@@ -334,13 +407,13 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition">
-                        {{ __('main.about_section.samsu') }}</h3>
+                        {{ __('main2026.about_section.samsu') }}</h3>
                     <div
                         class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold mb-5">
-                        {{ __('main.about_section.date1') }}
+                        {{ __('main2026.about_section.date1') }}
                     </div>
                     <div class="text-slate-600 text-[15px] leading-relaxed">
-                        {!! __('main.about_section.sections') !!}
+                        {!! __('main2026.about_section.sections') !!}
                     </div>
                 </div>
 
@@ -355,13 +428,13 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-indigo-700 transition">
-                        {{ __('main.about_section.inyaz') }}</h3>
+                        {{ __('main2026.about_section.inyaz') }}</h3>
                     <div
                         class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-semibold mb-5">
-                        {{ __('main.about_section.date2') }}
+                        {{ __('main2026.about_section.date2') }}
                     </div>
                     <div class="text-slate-600 text-[15px] leading-relaxed">
-                        {!! __('main.about_section.section2') !!}
+                        {!! __('main2026.about_section.section2') !!}
                     </div>
                 </div>
 
@@ -376,13 +449,13 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-purple-700 transition">
-                        {{ __('main.about_section.ShahrisabzSPI') }}</h3>
+                        {{ __('main2026.about_section.ShahrisabzSPI') }}</h3>
                     <div
                         class="inline-block px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-semibold mb-5">
-                        {{ __('main.about_section.date3') }}
+                        {{ __('main2026.about_section.date3') }}
                     </div>
                     <div class="text-slate-600 text-[15px] leading-relaxed">
-                        {!! __('main.about_section.section3') !!}
+                        {!! __('main2026.about_section.section3') !!}
                     </div>
                 </div>
             </div>
@@ -392,10 +465,10 @@
     <section id="goals" class="py-20 bg-white relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-10" data-aos="fade-up">
-                {{ __('main.goals_section.name') }}</h2>
+                {{ __('main2026.goals_section.name') }}</h2>
             <div class="prose prose-lg prose-blue mx-auto text-slate-600 leading-relaxed bg-slate-50 p-10 rounded-[2rem] border border-slate-100 shadow-sm relative z-10"
                 data-aos="fade-up" data-aos-delay="100">
-                {!! __('main.goals_section.goals') !!}
+                {!! __('main2026.goals_section.goals') !!}
             </div>
         </div>
         <div
@@ -406,17 +479,18 @@
     <section id="maps" class="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('/img/map-pattern.svg')] opacity-5"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16" data-aos="fade-up">{{ __('main.location') }}
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16" data-aos="fade-up">
+                {{ __('main2026.location') }}
             </h2>
 
             <div class="space-y-20">
                 <div class="flex flex-col lg:flex-row gap-10 items-center" data-aos="fade-right">
                     <div class="lg:w-1/2 lg:pr-10">
                         <h3 class="text-3xl font-bold text-blue-400 mb-4">
-                            {{ __('main.locations_section.only_date1') }}</h3>
+                            {{ __('main2026.locations_section.only_date1') }}</h3>
                         <div class="w-20 h-1 bg-blue-500 mb-6"></div>
                         <p class="text-slate-300 text-lg leading-relaxed mb-8">
-                            {{ __('main.locations_section.text1') }}</p>
+                            {{ __('main2026.locations_section.text1') }}</p>
                         <a href="#"
                             class="inline-flex items-center text-blue-400 hover:text-blue-300 transition font-medium">
                             Google Xaritada ochish <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor"
@@ -438,10 +512,10 @@
                 <div class="flex flex-col lg:flex-row-reverse gap-10 items-center" data-aos="fade-left">
                     <div class="lg:w-1/2 lg:pl-10">
                         <h3 class="text-3xl font-bold text-indigo-400 mb-4">
-                            {{ __('main.locations_section.only_date2') }}</h3>
+                            {{ __('main2026.locations_section.only_date2') }}</h3>
                         <div class="w-20 h-1 bg-indigo-500 mb-6"></div>
                         <p class="text-slate-300 text-lg leading-relaxed mb-8">
-                            {{ __('main.locations_section.text2') }}</p>
+                            {{ __('main2026.locations_section.text2') }}</p>
                         <a href="#"
                             class="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition font-medium">
                             Google Xaritada ochish <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor"
@@ -466,13 +540,13 @@
     <footer id="contact" class="bg-white border-t border-gray-200 pt-20 pb-10 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 class="text-2xl font-bold text-center text-slate-900 mb-16" data-aos="fade-up">
-                {{ __('main.contac_us_section.name') }}</h2>
+                {{ __('main2026.contac_us_section.name') }}</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
                     <h5 class="font-bold text-lg text-slate-900 mb-6 flex items-center">
                         <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
-                        {{ __('main.about_section.samsu') }}
+                        {{ __('main2026.about_section.samsu') }}
                     </h5>
                     <ul class="space-y-4 text-sm text-slate-600">
                         <li class="flex items-start">
@@ -500,7 +574,7 @@
                 <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
                     <h5 class="font-bold text-lg text-slate-900 mb-6 flex items-center">
                         <span class="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
-                        {{ __('main.about_section.inyaz') }}
+                        {{ __('main2026.about_section.inyaz') }}
                     </h5>
                     <ul class="space-y-4 text-sm text-slate-600">
                         <li class="flex items-start">
@@ -531,7 +605,7 @@
                 <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
                     <h5 class="font-bold text-lg text-slate-900 mb-6 flex items-center">
                         <span class="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
-                        {{ __('main.about_section.ShahrisabzSPI') }}
+                        {{ __('main2026.about_section.ShahrisabzSPI') }}
                     </h5>
                     <ul class="space-y-4 text-sm text-slate-600">
                         <li class="flex items-start">
@@ -548,7 +622,7 @@
             </div>
 
             <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-slate-500 text-sm mb-4 md:mb-0">© 2025 ICTE International Conference. Barcha huquqlar
+                <p class="text-slate-500 text-sm mb-4 md:mb-0">© 2026 ICTE International Conference. Barcha huquqlar
                     himoyalangan.</p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-slate-400 hover:text-blue-600 transition transform hover:scale-110">

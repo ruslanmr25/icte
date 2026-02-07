@@ -23,8 +23,26 @@ Route::get('lang/{locale}', function ($locale) {
 
 
 Route::get('/', function () {
-    return view('index2025');
+    return redirect("/conferences/2026");
 });
 
 
-Route::resource("conferences", ConferenceController::class);
+Route::get("conferences/2026", function () {
+    return view("index2026");
+});
+
+Route::get("black", function () {
+    return view("IndexUz");
+});
+
+
+Route::get("conferences/2025", function () {
+    return view("index2025");
+});
+
+// Route::resource("conferences", ConferenceController::class);
+
+
+// Route::get("/black", function () {
+//     return view("IndexUz");
+// });

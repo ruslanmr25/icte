@@ -17,8 +17,8 @@ return [
 
     "header_section" =>
     [
-        "subname" => "Xalqaro pedagogik ta’lim konferensiyasi (ICTE-2025)",
-        "name" => "XALQARO, MILLIY VA MINTAQAVIY O‘LCHAMLARDA ZAMONAVIY PEDAGOGIK TA’LIM",
+        "subname" => "Xalqaro pedagogik ta’lim konferensiyasi (ICTE-2026)",
+        "name" => "XALQARO, MILLIY VA HUDUDIY O‘LCHAMLARDA ZAMONAVIY PEDAGOGIK TA’LIM",
         "city" => "Samarqand",
 
     ],
@@ -27,9 +27,9 @@ return [
     [
         "suggestion" => " Sharof Rashidov nomidagi Samarqand davlat universiteti Samarqand
                             davlat chet tillar instituti va Shahrisabz davlat pedagogika
-                            instituti bilan hamkorlikda Sizni 2025 yil 3-5 iyun kunlari
+                            instituti bilan hamkorlikda Sizni 2026 yil 3-5 iyun kunlari
                             bo‘lib o‘tadigan pedagogik ta’lim bo‘yicha
-                            «ICTE-2025:UZBEKISTAN» xalqaro konferensiyasiga taklif etadi.",
+                            «ICTE-2026:UZBEKISTAN» xalqaro konferensiyasiga taklif etadi.",
 
         "sections" => "  Konferensiya asosiy sho‘balari:
                             <br />
@@ -43,7 +43,7 @@ return [
 
         "samsu" => "Sharof Rashidov nomidagi Samarqand davlat universiteti",
 
-        "date1" => "2025-yil 3-iyun",
+        "date1" => "2026-yil 3-iyun",
         "section1" => " 1 . Oliy o‘quv yurti - maktab hamkorlik modellarning zamonaviy
                             shakllari <br />
                             2. Amaliyotga yo‘naltirilgan ta’limda raqamli texnologiyalar
@@ -55,7 +55,7 @@ return [
 
         "inyaz" => "Samarqand davlat chet tillari instituti",
 
-        "date2" => "2025-yil 4-iyun",
+        "date2" => "2026-yil 4-iyun",
         "section2" => " 5. Ko‘p madaniyatli ta’lim: muammo va istiqbollar <br />
                             6. Turli mamlakatlarda pedagogik ta’limning tarixiy an’analari
                             <br />
@@ -64,10 +64,10 @@ return [
                             8. Ko‘p madaniyatli ta'limda raqamli texnologiyalardan
                             foydalanish",
         "ShahrisabzSPI" => "Shahrisabz davlat pedagogika instituti",
-        "date3" => "2025-yil 5-iyun",
+        "date3" => "2026-yil 5-iyun",
         "section3" => " 9. Zamonaviy jamiyatda o‘qituvchining tarbiyaviy roli <br />
                             10. Psixologik-pedagogik qo‘llab-quvvatlash va o‘qituvchilarning
-                            kasbiy toliqish <br />
+                            kasbiy zo‘riqish <br />
                             11. Pedagogik kasbda etik va axloqiy me’yorlar <br />
                             12. Ta’lim muassasalarida tarbiya jarayoniga innovatsion
                             yondashuvlar. <br />"
@@ -106,7 +106,7 @@ return [
         "text3" => "Shahrisabz davlat pedagogika instituti, O‘zbekiston Respublikasi,
                         180100, Shahrisabz shahri, Shahrisabz ko‘chasi, 10",
 
-        "until_project" => "Konferensiya boshlanishiga",
+        "until_project" => "Loyiha boshlanguncha",
 
         "day_left" => "Kun qoldi"
 
@@ -127,7 +127,7 @@ return [
         'name' => 'Rustam Xalmuradov',
         'position' => 'SamDU Rektori',
         'quote' => 'Hurmatli hamkasblar, xonimlar va janoblar! Asrlar davomida bilim tug\'ilgan universitet devorlari orasida, avlodlar va g\'oyalar o\'rtasida yangi muloqot bugun boshlanadi. Konferensiyamiz yangi ufqlarga yo\'l ochadigan mayoq bo\'lsin.',
-        'wishes' => 'Sizlarni kutib olishdan mamnunman! Muvaffaqiyat tilayman!',
+        'wishes' => 'Sizlarni kutib olishdan mamnunman! Omad!',
         'bio' => 'Xalmuradov Rustam Ibragimovich — Sharof Rashidov nomidagi Samarqand Davlat universiteti rektori, professor, texnika fanlari doktori, Oliy Majlis deputati, fan, ta\'lim va sog\'liqni saqlash masalalari qo\'mitasi a\'zosi.',
         'achievements' => 'Ilm-fan va ta\'limga qo\'shgan hissasi uchun ko\'plab hukumat mukofotlari bilan taqdirlangan. 200 dan ortiq ilmiy nashrlar, jumladan, 30 dan ortiq monografiya va darsliklar muallifi.',
         'ranking_title' => 'Xalqaro E\'tirof',

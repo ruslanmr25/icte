@@ -3,77 +3,25 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ICTE-2025</title>
+    <title>ICTE</title>
     <meta content="" name="description" />
     <meta content="" name="author" />
     <meta content="" name="keywords" />
     <meta
         content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
         name="viewport" />
-    <!-- Goex v1.0 || ex nihilo || July 2020 -->
-    <!-- style start -->
     <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css" />
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-    <!-- style end -->
-    <!-- google fonts start -->
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
+
     <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700"
         rel="stylesheet" type="text/css" />
 
 
-    <style>
-        /* Til tugmasi – background o‘zgarmasin */
-        .lang-dropdown>a,
-        .lang-dropdown>a:focus,
-        .lang-dropdown>a:hover {
-            background: transparent !important;
-            /* color: #fff !important; */
-            /* Matn oq bo‘lsin (navbar qoraroq bo‘lsa) */
-            font-weight: 600;
-        }
 
-        /* Dropdown menyuni to‘g‘ri joylashtirish */
-        .lang-dropdown .lang-menu {
-            right: 0;
-            /* chapdan chiqib ketmasligi uchun */
-            left: auto;
-            min-width: 160px;
-            padding: 8px 0;
-            border-radius: 6px;
-            background: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border: none;
-        }
-
-        /* Ichidagi linklar */
-        .lang-dropdown .lang-menu li a {
-            padding: 10px 15px;
-            color: #333;
-            font-size: 14px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        /* Hover effekti */
-        .lang-dropdown .lang-menu li a:hover {
-            /* background: #f5f5f5; */
-            color: #007bff;
-        }
-
-        /* Bayroq belgisi */
-        .lang-dropdown .lang-menu li a .flag {
-            font-size: 16px;
-            width: 20px;
-            text-align: center;
-        }
-    </style>
-    <!-- google fonts end -->
 </head>
 
 <body>
-    <!-- preloader start -->
     <div class="preloader-bg"></div>
     <div id="preloader">
         <div id="preloader-status">
@@ -82,8 +30,7 @@
             </div>
         </div>
     </div>
-    <!-- preloader end -->
-    <!-- navigation start -->
+
     <nav class="navbar navbar-fixed-top navbar-bg-switch">
         <!-- container start -->
         <div class="container-fluid">
@@ -92,11 +39,9 @@
                 <div class="logo">
                     <a class="navbar-brand logo" href="#">
                         <!-- logo light start -->
-                        <img alt="Logo" class="logo-light"
-                           src="/logo.png"  /><!-- logo light end -->
+                        <img alt="Logo" class="logo-light" src="/logo.png" /><!-- logo light end -->
                         <!-- logo dark start -->
-                        <img alt="Logo" class="logo-dark"
-                            src="/logo.png"  /><!-- logo dark end --></a>
+                        <img alt="Logo" class="logo-dark" src="/logo.png" /><!-- logo dark end --></a>
                 </div>
                 <!-- logo end -->
             </div>
@@ -111,46 +56,51 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <!-- menu start -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="page-scroll link-underline-menu active" href="#home">Bosh sahifa</a>
+                            <a class="page-scroll link-underline-menu active"
+                                href="#home">{{ __('main.main_page') }}</a>
                         </li>
 
                         <li>
-                            <a class="page-scroll link-underline-menu" href="#about">Konferensiya haqida</a>
+                            <a class="page-scroll link-underline-menu"
+                                href="#about">{{ __('main.about_conference') }}</a>
                         </li>
                         <li>
-                            <a class="page-scroll link-underline-menu" href="#goals">Maqsadlar</a>
+                            <a class="page-scroll link-underline-menu" href="#goals">{{ __('main.goals') }}</a>
                         </li>
                         <li>
-                            <a class="page-scroll link-underline-menu" href="#maps">Joylashuv</a>
+                            <a class="page-scroll link-underline-menu" href="#maps">{{ __('main.location') }}</a>
                         </li>
 
                         <li>
-                            <a download class="page-scroll link-underline-menu" href="/files/ICTE_2025_UZ.pdf">Axborot
-                                xati</a>
-                        </li>
-                        
-                          <li>
-                            <a download class="page-scroll link-underline-menu"
-                                href="/files/program.docx">Dastur</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll link-underline-menu" download href="/files/COLLECTION2025.pdf">Arxiv</a>
+                            <a download class="page-scroll link-underline-menu" href="/files/ICTE_2025_UZ.pdf">
+                                {{ __('main.information_letter') }}</a>
                         </li>
 
-                        <!-- TIL DROPDOWN -->
+                        <li>
+                            <a download class="page-scroll link-underline-menu" href="/files/program.docx">
+                                {{ __('main.program') }}</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll link-underline-menu" download
+                                href="/files/COLLECTION2025.pdf">{{ __('main.archive') }}</a>
+                        </li>
+
+
                         <li class="dropdown lang-dropdown">
                             <a href="#" class="dropdown-toggle page-scroll link-underline-menu"
                                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                Til <span class="caret"></span>
+                                {{ __('main.language') }} <span class="caret"></span>
                             </a>
                             <!-- dropdown-menu-right qo'shildi -->
                             <ul class="dropdown-menu dropdown-menu-right lang-menu">
-                                <li><a href="/"><span class="flag"></span> O‘zbekcha</a></li>
-                                <li><a href="/ru"><span class="flag"></span> Русский</a></li>
-                                <li><a href="/en"><span class="flag"></span> English</a></li>
+                                <li><a href="{{ route('lang.switch', 'uz') }}"><span class="flag"></span>
+                                        O‘zbekcha</a></li>
+                                <li><a href="{{ route('lang.switch', 'ru') }}"><span class="flag"></span> Русский</a>
+                                </li>
+                                <li><a href="{{ route('lang.switch', 'en') }}"><span class="flag"></span> English</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -166,28 +116,20 @@
         </div>
         <!-- container end -->
     </nav>
-    <!-- navigation end -->
-    <!-- home section start -->
+
     <section class="upper-page" id="home">
-        <!-- hero bg start -->
         <div class="hero-fullscreen overlay overlay-dark-70">
-            <!-- ken burns image slideshow start -->
             <div class="hero-bg kenburns-slide-wrapper">
                 <div class="kenburns-slide kenburns-slide-1"></div>
                 <div class="kenburns-slide kenburns-slide-2"></div>
                 <div class="kenburns-slide kenburns-slide-3"></div>
                 <div class="kenburns-slide kenburns-slide-4"></div>
             </div>
-            <!-- ken burns image slideshow end -->
         </div>
-        <!-- hero bg end -->
-        <!-- center container start -->
         <div class="center-container">
-            <!-- center block start -->
             <div class="center-block">
-                <!-- home subtitle start -->
                 <h2 class="home-page-title fadeIn-element">
-                    Xalqaro pedagogik ta’lim konferensiyasi (ICTE-2025)
+                    {{ __('main.header_section.subname') }}
                 </h2>
                 <!-- home subtitle end -->
                 <!-- divider start -->
@@ -195,7 +137,7 @@
                 <!-- divider end -->
                 <!-- home title start -->
                 <h1 class="home-page-title fadeIn-element">
-                    XALQARO, MILLIY VA HUDUDIY O‘LCHAMLARDA ZAMONAVIY PEDAGOGIK TA’LIM
+                    {{ __('main.header_section.name') }}
                 </h1>
                 <!-- home title end -->
                 <!-- divider start -->
@@ -203,7 +145,7 @@
                 <!-- divider end -->
                 <!-- sign up modal launcher start -->
                 <div class="the-button-wrapper fadeIn-element">
-                    <div class="the-button">Iyun 3, 2025 - Iyun 05, 2025</div>
+                    <div class="the-button">{{ __('main.header_section.city') }}</div>
                 </div>
                 <!-- sign up modal launcher end -->
             </div>
@@ -229,7 +171,7 @@
                 <!-- col start -->
                 <div class="col-lg-12">
                     <!-- page title start -->
-                    <div class="post-title">Konferensiya haqida</div>
+                    <div class="post-title">{{ __('main.about_conference') }}</div>
                     <!-- page title end -->
                 </div>
                 <!-- col end -->
@@ -241,23 +183,11 @@
                 <div class="post-txt">
                     <h4>
                         <p>
-                            Sharof Rashidov nomidagi Samarqand davlat universiteti Samarqand
-                            davlat chet tillar instituti va Shahrisabz davlat pedagogika
-                            instituti bilan hamkorlikda Sizni 2025 yil 3-5 iyun kunlari
-                            bo‘lib o‘tadigan pedagogik ta’lim bo‘yicha
-                            «ICTE-2025:UZBEKISTAN» xalqaro konferensiyasiga taklif etadi.
+                            {{ __('main.about_section.suggestion') }}
                         </p>
                         <br />
                         <p>
-                            Konferensiya asosiy  sho‘balari:
-                            <br />
-                            - Pedagog-talabalarni amaliyotga yoʻnaltirilgan oʻqitish: oliy
-                            oʻquv yurti va maktab hamkorligi modellari
-                            <br />
-                            - Koʻp madaniyatli dunyoda pedagogik taʼlim: tarix va hozirgi
-                            zamon
-                            <br />
-                            – Oʻqituvchi-tarbiyachi: vazifa va muammolar
+                            {!! __('main.about_section.sections') !!}
                         </p>
                     </h4>
                 </div>
@@ -272,28 +202,25 @@
                     <div class="post-txt">
                         <!-- page subtitle start -->
                         <h4 class="post-heading">
-                            Sharof Rashidov nomidagi Samarqand davlat universiteti
+                            {{ __('main.about_section.samsu') }}
+
+
                         </h4>
                         <!-- page subtitle end -->
                         <!-- divider start -->
                         <div class="inner-divider-half"></div>
                         <!-- divider end -->
                         <!-- page subtitle number start -->
-                        <div class="post-title">2025-yil 3-iyun</div>
+                        <div class="post-title"> {{ __('main.about_section.date1') }}
+                        </div>
                         <!-- page subtitle number end -->
                         <!-- divider start -->
                         <div class="inner-divider-half"></div>
                         <!-- divider end -->
                         <!-- page TXT start -->
                         <p>
-                            1 . Oliy o‘quv yurti - maktab hamkorlik modellarning zamonaviy
-                            shakllari <br />
-                            2. Amaliyotga yo‘naltirilgan ta’limda raqamli texnologiyalar
-                            <br />
-                            3. Yosh pedagoglarni qo‘llab-quvvatlash ustoz-shogird tizimi
-                            <br />
-                            4. Inklyuziv ta'lim va alohida ehtiyojga ega bolalar bilan
-                            ishlash <br />
+                            {!! __('main.about_section.sections') !!}
+
                         </p>
                         <!-- page TXT end -->
                     </div>
@@ -306,23 +233,19 @@
                     <div class="post-txt">
                         <!-- page subtitle start -->
                         <h4 class="post-heading">
-                            Samarqand davlat chet tillari instituti
+                            {{ __('main.about_section.inyaz') }}
+
                         </h4>
                         <!-- page subtitle end -->
                         <!-- divider start -->
                         <div class="inner-divider-half"></div>
                         <!-- divider end -->
                         <!-- page subtitle number start -->
-                        <div class="post-title">2025-yil 4-iyun</div>
+                        <div class="post-title"> {{ __('main.about_section.date2') }}
+                        </div>
                         <div class="inner-divider-half"></div>
                         <p>
-                            5. Ko‘p madaniyatli ta’lim: muammo va istiqbollar <br />
-                            6. Turli mamlakatlarda pedagogik ta’limning tarixiy an’analari
-                            <br />
-                            7. Bo‘lajak pedagoglarda bag‘rikenglik va madaniyatlararo
-                            muloqotni shakllantirish <br />
-                            8. Ko‘p madaniyatli ta'limda raqamli texnologiyalardan
-                            foydalanish
+                            {!! __('main.about_section.section2') !!}
                         </p>
                         <!-- page TXT end -->
                     </div>
@@ -332,75 +255,44 @@
                     <div class="post-txt">
                         <!-- page subtitle start -->
                         <h4 class="post-heading">
-                            Shahrisabz davlat pedagogika instituti
+                            {{ __('main.about_section.ShahrisabzSPI') }}
+
                         </h4>
                         <!-- page subtitle end -->
                         <!-- divider start -->
                         <div class="inner-divider-half"></div>
                         <!-- divider end -->
                         <!-- page subtitle number start -->
-                        <div class="post-title">2025-yil 5-iyun</div>
+                        <div class="post-title"> {{ __('main.about_section.date3') }}
+                        </div>
                         <!-- page subtitle number end -->
                         <!-- divider start -->
                         <div class="inner-divider-half"></div>
                         <!-- divider end -->
                         <!-- page TXT start -->
                         <p>
-                            9. Zamonaviy jamiyatda o‘qituvchining tarbiyaviy roli <br />
-                            10. Psixologik-pedagogik qo‘llab-quvvatlash va o‘qituvchilarning
-                            kasbiy zo‘riqish <br />
-                            11. Pedagogik kasbda etik va axloqiy me’yorlar <br />
-                            12. Ta’lim muassasalarida tarbiya jarayoniga innovatsion
-                            yondashuvlar. <br />
+                            {!! __('main.about_section.section3') !!}
+
                         </p>
                         <!-- page TXT end -->
                     </div>
                 </div>
                 <!-- col end -->
             </div>
-            <!-- row end -->
-            <!-- divider start -->
             <div class="inner-divider"></div>
-            <!-- divider end -->
         </div>
-        <!-- container end -->
         <div class="container">
-            <!-- divider start -->
-            <!-- row start -->
             <div class="row">
-                <!-- col start -->
                 <div class="col-lg-12">
-                    <!-- page title start -->
-                    <div id="goals" class="post-title">Konferensiyaning asosiy maqsadlari</div>
-                    <!-- page title end -->
+                    <div id="goals" class="post-title">{{ __('main.goals_section.name') }}</div>
                 </div>
-                <!-- col end -->
             </div>
-            <!-- row end -->
-            <!-- divider start -->
             <div class="inner-divider"></div>
-            <!-- divider end -->
-            <!-- row start -->
             <div class="row justify-content-center">
-                <!-- col start -->
                 <div class="col-sm-12">
                     <div class="post-txt">
-                        <!-- divider start -->
-                        <!-- <div class="inner-divider-half"></div>divider end -->
-                        <!-- page subtitle number start -->
                         <h4>
-                            <p>
-                                ✔ Pedagogik ta’lim sohasidagi dolzarb va istiqbolli xalqaro
-                                ilmiy loyihalarni muhokama qilish, ishchi seminarlar doirasida
-                                ishtirokchilarning harakatlarini muvofiqlashtirish va amalga
-                                oshirish rejalarini belgilash
-                            </p>
-                            <br />
-                            <p>
-                                ✔ O‘qituvchilarni tayyorlash, pedagogik amaliyot natijalarini
-                                taqdim etish, tajriba va fikr almashish orqali ta’lim
-                                jarayonini takomillashtirish.
-                            </p>
+                            {!! __('main.goals_section.goals') !!}
                         </h4>
                         <p></p>
                         <!-- page TXT end -->
@@ -439,7 +331,7 @@
 
                     <!-- divider end -->
                     <!-- page title start -->
-                    <div class="post-title post-title-light">3-iyun</div>
+                    <div class="post-title post-title-light">{{ __('main.locations_section.only_date1') }}</div>
                     <!-- page title end -->
                     <!-- divider start -->
 
@@ -448,9 +340,8 @@
                     <!-- divider end -->
                     <!-- page TXT start -->
                     <p>
-                        Sharof Rashidov nomidagi Samarqand davlat universiteti,
-                        O‘zbekiston Respublikasi, 140100, Samarqand shahri, Universitet
-                        bulvari, 15.
+                        {{ __('main.locations_section.text1') }}
+
                     </p>
                     <!-- page TXT end -->
                 </div>
@@ -490,14 +381,13 @@
                 <!-- divider end -->
                 <!-- col start -->
                 <div class="post-txt post-txt-light services-txt">
-                    <div class="post-title post-title-light">4-iyun</div>
+                    <div class="post-title post-title-light">{{ __('main.locations_section.only_date2') }}</div>
 
                     <div class="inner-divider-half"></div>
                     <!-- divider end -->
                     <!-- page TXT start -->
                     <p>
-                        Samarqand davlat chet tillar instituti, O‘zbekiston Respublikasi,
-                        140100, Samarqand shahri, Gagarin ko‘chasi, 43.
+                        {{ __('main.locations_section.text2') }}
                     </p>
                     <!-- page TXT end -->
                 </div>
@@ -526,14 +416,13 @@
                 <div class="post-txt post-txt-light services-txt">
                     <!-- page subtitle start -->
 
-                    <div class="post-title post-title-light">5-iyun</div>
+                    <div class="post-title post-title-light">{{ __('main.locations_section.only_date3') }}</div>
 
                     <div class="inner-divider-half"></div>
                     <!-- divider end -->
                     <!-- page TXT start -->
                     <p>
-                        Shahrisabz davlat pedagogika instituti, O‘zbekiston Respublikasi,
-                        180100, Shahrisabz shahri, Shahrisabz ko‘chasi, 10
+                        {{ __('main.locations_section.text3') }}
                     </p>
                     <!-- page TXT end -->
                 </div>
@@ -571,48 +460,36 @@
             <!-- countdown start -->
             <div class="countdown">
                 <!-- page subtitle start -->
-                <h2 class="countdown-top">Loyiha boshlanguncha</h2>
+                <h2 class="countdown-top">{{ __('main.locations_section.until_project') }}</h2>
                 <!-- page subtitle end -->
                 <!-- divider start -->
                 <div class="inner-divider-half"></div>
                 <!-- divider end -->
-                <!-- page days number start -->
                 <h3>{dnnn}</h3>
-                <!-- page days number end -->
-                <!-- divider start -->
                 <div class="inner-divider-half"></div>
-                <!-- divider end -->
-                <!-- page days TXT start -->
-                <h2 class="countdown-bottom">Kun qoldi</h2>
-                <!-- page days TXT end -->
+                <h2 class="countdown-bottom">{{ __('main.locations_section.day_left') }}</h2>
             </div>
-            <!-- countdown end -->
-            <!-- divider start -->
             <div class="inner-divider"></div>
-            <!-- divider end -->
         </div>
-        <!-- parallax wrapper end -->
     </section>
-    <!-- launch section end -->
     <div class="inner-divider-light"></div>
-    <!-- put here -->
 
     <div class="inner-divider inner-divider-light"></div>
 
     <section class="section-light" id="contact">
         <div class="container">
             <footer class="py-5 p-4">
-                <h2 class="post-title">Biz bilan bog'lanish</h2>
+                <h2 class="post-title">{{ __('main.contac_us_section.name') }}</h2>
                 <div class="row p-4">
                     <div class="col-4 col-md-4 mb-3">
                         <h5 class="text-body-secondary footer-header">
-                            Sharof Rashidov nomidagi Samarqand davlat universiteti
+                            {{ __('main.about_section.samsu') }}
                         </h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <span class="nav-link p-0 text-body-secondary">
-                                    <strong> Kontaktlar: </strong>
-                                    Ahmedova Shakhzoda +998909098657
+                                    <strong> {{ __('main.contac_us_section.contacts') }}:</strong>
+                                    Axmedova Shahzoda +998909098657
                                 </span>
                             </li>
                             <li class="nav-item mb-2">
@@ -626,19 +503,19 @@
 
                     <div class="col-4 col-md-4 mb-3">
                         <h5 class="text-body-secondary footer-header">
-                            Samarqand davlat chet tillari instituti
+                            {{ __('main.about_section.inyaz') }}
                         </h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <span class="nav-link p-0 text-body-secondary">
-                                    <strong> Kontakt: </strong>
+                                    <strong> {{ __('main.contac_us_section.contacts') }}: </strong>
 
                                     Julmatova Saodat +998975786875, Narzikulova Feruza
                                     +998915569869</span>
                             </li>
                             <li class="nav-item mb-2">
                                 <span class="nav-link p-0 text-body-secondary">
-                                    <strong> E-mail: </strong>
+                                    <strong> {{ __('main.contac_us_section.email') }}: </strong>
 
                                     sjulmatova@gmail.com
                                 </span>
@@ -648,39 +525,35 @@
 
                     <div class="col-4 col-md-4 mb-3">
                         <h5 class="text-body-secondary footer-header">
-                            Shahrisabz davlat pedagogika instituti
+                            {{ __('main.about_section.ShahrisabzSPI') }}
                         </h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
                                 <span class="nav-link p-0 text-body-secondary">
-                                    <strong> Kontakt: </strong>
+                                    <strong> {{ __('main.contac_us_section.contacts') }}: </strong>
                                     Sardor Ximmatov +99895 335 23 99
                                 </span>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
 
                 <div
                     class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-body-secondary">
-                    <p class="text-body-secondary">© 2024 ICTE-2025</p>
+                    <p class="text-body-secondary">© since 2024, ICTE</p>
                 </div>
             </footer>
         </div>
     </section>
-    <!-- contact section end -->
 
-    <!-- to top arrow start -->
     <a class="page-scroll" href="#home">
         <div class="to-top-arrow">
             <span class="ion-ios-arrow-up"></span>
         </div>
     </a><!-- to top arrow end -->
-    <!-- scripts start -->
     <script src="js/plugins.js"></script>
     <script src="js/goex.js"></script>
-    <!-- scripts end -->
 </body>
 
 </html>
